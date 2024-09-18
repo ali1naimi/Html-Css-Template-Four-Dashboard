@@ -1,0 +1,146 @@
+/* Start Box */
+.d-grid {
+    display: grid;
+}
+.d-flex {
+    display: flex;
+}
+.align-center {
+    align-items: center;
+}
+.space-between {
+    justify-content: space-between;
+}
+.d-block {
+    display: block;
+}
+/* End Box */
+/* Start Padding, Margin */
+.p-20 {
+    padding: 20px;
+}
+.p-15 {
+    padding: 15px;
+}
+.p-10 {
+    padding: 10px;
+}
+.m-20 {
+    margin: 20px;
+}
+.m-0 {
+    margin: 0;
+}
+.mt-0 {
+    margin-top: 0;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mلا-20 {
+    margin-bottom: 20px;
+}
+.gap-20 {
+    gap: 20px;
+}
+.w-full {
+    width: 100%;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.w-fit {
+    width: fit-content;
+}
+/* End Padding, Margin */
+/* Start Color */
+.bg-white {
+    background-color: white;
+}
+.bg-eee {
+    background-color: #eee;
+}
+.bg-blue {
+    background-color: #0075ff;
+}
+.c-black {
+    color: black;
+}
+.c-blue-alt {
+    color: #0d69d5;
+}
+.c-orange {
+    color: #f59e0b;
+}
+.c-green {
+    color: #22c55e;
+}
+.c-red {
+    color: #f44336;
+}
+.c-grey {
+    color: #888;
+}
+.c-white {
+    color: white;
+}
+/* End Color */
+/* Start Position */
+.p-relative {
+    position: relative;
+}
+/* End Position */
+/* Start Font */
+.txt-c {
+    text-align: center;
+}
+.fs-14 {
+    font-size: 14px;
+}
+/* End Font */
+/* Start Border */
+.rad-6 {
+    border-radius: 6px;
+}
+.rad-10 {
+    border-radius: 10px;
+}
+/* End Border */
+/* Start Transition */
+.tr-0.3s {
+    transition: 0.3s
+}
+/* End Transition */
+/* Start Media */
+@media (max-width: 767px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .txt-c-mobile {
+        text-align: center;
+    }
+}
+@media (max-width: 767px) {
+    .block-mobile {
+        display: block;
+    }
+}
+/* End Media */
+/* Strat Components */
+.between-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-shape {
+    
+}
+/* End Components */
