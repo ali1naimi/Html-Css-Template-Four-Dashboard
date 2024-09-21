@@ -11,6 +11,9 @@
 .space-between {
     justify-content: space-between;
 }
+.f-wrap {
+    flex-wrap: wrap;
+}
 .d-block {
     display: block;
 }
@@ -43,7 +46,19 @@
 .mt-20 {
     margin-top: 20px;
 }
-.mلا-20 {
+.mt-25 {
+    margin-top: 25px;
+}
+.mb-0 {
+    margin-bottom: 0px;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-20 {
     margin-bottom: 20px;
 }
 .gap-20 {
@@ -69,8 +84,17 @@
 .bg-blue {
     background-color: #0075ff;
 }
+.bg-orange {
+    background-color: #f59e0b;
+}
+.bg-green {
+    background-color: #22c55e;
+}
 .c-black {
     color: black;
+}
+.c-blue {
+    color: #0075ff;
 }
 .c-blue-alt {
     color: #0d69d5;
@@ -103,6 +127,12 @@
 .fs-14 {
     font-size: 14px;
 }
+.fs-25 {
+    font-size: 25px;
+}
+.fw-bold {
+    font-weight: bold;
+}
 /* End Font */
 /* Start Border */
 .rad-6 {
@@ -110,6 +140,15 @@
 }
 .rad-10 {
     border-radius: 10px;
+}
+.b-none {
+    border: none;
+}
+.border-ccc {
+    border: 1px solid #ccc;
+}
+.resize-none {
+    resize: none;
 }
 /* End Border */
 /* Start Transition */
@@ -140,7 +179,14 @@
     align-items: center;
     justify-content: space-between;
 }
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .btn-shape {
-    
+    padding: 4px 10px;
+    border-radius: 6px;
+    cursor: pointer;
 }
 /* End Components */
