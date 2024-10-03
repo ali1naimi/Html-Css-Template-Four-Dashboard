@@ -414,7 +414,10 @@ a {
 .last-project ul li.done::before {
     background-color: var(--blue-color);
 }
-.last-project ul li.current::before {}
+.last-project ul li.current::before {
+    /* background-color: var(--red-color); */
+    animation: current 1s linear infinite;
+}
 .last-project img {
     position: absolute;
     width: 180px;
@@ -423,3 +426,576 @@ a {
     opacity: 0.1;
 }
 /* End Last Project */
+/* Start Reminders */
+.reminders ul li {
+    margin-left: 30px;
+    padding-left: 15px;
+    /* position: absolute; */
+    position: relative;
+}
+.reminders ul li::before {
+  content: "";
+  position: absolute;
+  left: -31px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  bottom: 18px;
+}
+.reminders ul li:first-of-type {
+    border-left: 2px solid var(--blue-color);
+}
+.reminders ul li:first-of-type::before {
+    background-color: var(--blue-color);
+}
+.reminders ul li:nth-of-type(2) {
+    border-left: 2px solid var(--green-color);
+}
+.reminders ul li:nth-of-type(2)::before {
+    background-color: var(--green-color);
+}
+.reminders ul li:nth-of-type(3) {
+    border-left: 2px solid var(--orange-color);
+}
+.reminders ul li:nth-of-type(3)::before {
+    background-color: var(--orange-color);
+}
+.reminders ul li:last-of-type {
+    border-left: 2px solid var(--red-color);
+}
+.reminders ul li:last-of-type::before {
+    background-color: var(--red-color);
+}
+.reminders ul li h3 {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.reminders ul li p {
+    font-size: 13px;
+    margin-top: 0;
+}
+/* End Reminders */
+/* Start Latest Post */
+.latest-post .me {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin-top: -10px;
+}
+.latest-post .me img {
+    width: 48px;
+    height: 48px;
+}
+.latest-post .body-txt {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 1.8;
+  font-weight: 500;
+  font-size: 17px;
+  text-transform: capitalize;
+  /* margin-right: 20px; */
+}
+@media (max-width: 767px) {
+    .latest-post .me  {
+        text-align: center;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .latest-post .me .txt {
+        margin-top: -20px;
+    }
+}
+.latest-post .our-data {
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+/* End Latest Post */
+/* Start Social Media Stats */
+.social-media .media-row {
+    margin-bottom: 10px;
+}
+.social-media .icon {
+    display: flex; /* لتفعيل خاصية التوسيط */
+    align-items: center; /* توسيط عمودي */
+    justify-content: center; /* توسيط أفقي */
+    width: 52px; /* عرض المربع الأزرق */
+    height: 56px; /* ارتفاع المربع الأزرق */
+    
+}
+.social-media i {
+    color: #fff; /* لون أيقونة تويتر باللون الأبيض */
+}
+.social-media .flw {
+    flex-grow: 1;
+}
+.social-media a {
+    margin-right: 15px;
+    font-size: 13px;
+}
+.social-media .twt {
+    background-color: rgb(29 161 242 / 20%);
+}
+.social-media .twt .icon {
+    background-color: #1da1f2;
+}
+.social-media .twt .flw {
+    color: #1da1f2;
+}
+.social-media .twt a {
+    background-color: #1da1f2;
+}
+.social-media .fb {
+    background-color: rgb(24 119 242 / 20%);
+}
+.social-media .fb .icon {
+    background-color: #1877f2;
+}
+.social-media .fb .flw {
+    color: #1877f2;
+}
+.social-media .fb a {
+    background-color: #1877f2;
+}
+.social-media .yb {
+    background-color: rgb(255 0 0 / 20%);
+}
+.social-media .yb .icon {
+    background-color: #ff0000;
+}
+.social-media .yb .flw {
+    color: #ff0000;
+}
+.social-media .yb a {
+    background-color: #ff0000;
+}
+.social-media .lin {
+    background-color: rgb(0 119 181 / 20%);
+}
+.social-media .lin .icon {
+    background-color: #0077b5;
+}
+.social-media .lin .flw {
+    color: #0077b5;
+}
+.social-media .lin a {
+    background-color: #0077b5;
+}
+/* End Social Media Stats */
+/* Start Project */
+.project .responsive-table {
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  th {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  td {
+    padding: 20px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+  }
+  
+  thead {
+    background-color: #ddd;
+  }
+  
+  th {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  table tbody td {
+    transition: 0.3s;
+  }
+  table tbody tr:hover td {
+    background-color: #faf7f7;
+  }
+  .team img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: -15px;
+    border: 2px solid white;
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    display: inline-block;
+    font-size: 13px;
+  }
+  
+  .pending {
+    background-color: #f0ad4e; /* اللون البرتقالي */
+  }
+  
+  .in-progress {
+    background-color: #007bff; /* اللون الأزرق */
+  }
+  
+  .completed {
+    background-color: #28a745; /* اللون الأخضر */
+  }
+  
+  .rejected {
+    background-color: #dc3545; /* اللون الأحمر */
+  }  
+/* End Project */
+/* Start Settings */
+.settings-page {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width: 767px) {
+    .settings-page {
+        grid-template-columns: minmax(100px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+.settings-page .close-message {
+    border: 1px solid #ccc;
+    min-height: 150px;
+}
+.settings-page .email {
+    display: inline-flex;
+    margin-right: 15px;
+    width: calc(100% - 80px);
+}
+.settings-page .info {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.settings-page .info:first-of-type {
+    padding-top: 0;
+}
+.settings-page .info:last-of-type {
+    padding-bottom: 0;
+}
+.settings-page .info:not(:last-of-type) {
+    border-bottom: 1px solid #ddd;
+}
+.settings-page .social-boxes i {
+    width: 40px;
+    height: 40px;
+    background-color: #F6F6F6;
+    border: 1px solid #ddd;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: rgb(221, 221, 221);
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    transition: 0.3s;
+}
+.settings-page .social-boxes input {
+    height: 40px;
+    background-color: #F6F6F6;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    border-radius: 0 6px 6px 0;
+}
+.settings-page .social-boxes > div:focus-within i {
+    color: black;
+}
+
+
+.widget-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* تنسيق عناصر القائمة */
+.widget-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* تنسيق مربعات الاختيار */
+.widget-list input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    accent-color: #007bff;
+}
+
+/* تنسيق النص بجانب مربعات الاختيار */
+.widget-list label {
+    font-size: 16px;
+}
+
+.backup-options {
+    margin-bottom: 20px;
+}
+
+.backup-options label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.backup-options input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #007bff; /* لون الدائرة */
+    width: 20px;
+    height: 20px;
+}
+.servers input[type="radio"] {
+    appearance: none;
+}
+.backup .servers {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+@media (max-width: 767px) {
+    .backup .servers {
+        flex-direction: column;
+    }
+}
+.backup .servers .server {
+    border: 1px solid #eee;
+    position: relative;
+}
+.backup .servers .server label {
+    cursor: pointer;
+}
+.backup .servers input[type="radio"]:checked + .server {
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+}
+/*  */
+.toggle-checkbox {
+    appearance: none;
+}
+.toggle-switch {
+    width: 78px;
+  height: 32px;
+  background-color: #ccc;
+  border-radius: 16px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.toggle-switch::before {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d"; /* الشيفرة الخاصة بأيقونة X */
+    position: absolute;
+    font-weight: 900;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+
+}
+.toggle-checkbox:checked + .toggle-switch {
+    background-color: var(--blue-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+    content: "\f00c";
+    left: 50px;
+    color: var(--blue-color);
+}
+/* End Settings */
+/* Start Profile */
+@media (max-width: 767px) {
+    .profile-page .overview {
+        flex-direction: column;
+    }
+}
+.profile-page .avatar-box {
+    width: 300px;
+}
+@media (min-width: 768px) {
+    .profile-page .avatar-box {
+        border-right: 1px solid #ddd;
+    }
+}
+.profile-page .avatar-box > img {
+    width: 120px;
+    height: 120px;
+}
+.profile-page .avatar-box .level {
+    height: 6px;
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+}
+.profile-page .avatar-box .level span {
+    position: absolute;
+    height: 100%;
+    background-color: var(--blue-color);
+    left: 0;
+}
+.profile-page .info-box {
+    
+}
+.profile-page .info-box .box {
+    flex-wrap: wrap;
+    border-bottom: 1px solid #eee;
+    transition: 0.3s;
+}
+.profile-page .info-box .box:hover {
+    background-color: #F6F6F6;
+}
+.profile-page .info-box .box h4 {}
+@media (min-width: 768px) {
+    .profile-page .info-box .box > div {
+        min-width: 230px;
+        padding: 0px 0 0;
+    }
+}
+
+.profile-page .toggle-switch {
+    height: 19px; /* تعديل الطول إلى 19px */
+    background-color: #ccc;
+    border-radius: 9.5px; /* نصف الطول لجعل الحواف دائرية */
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.profile-page .toggle-switch::before {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d"; /* الشيفرة الخاصة بأيقونة X */
+    position: absolute;
+    font-weight: 900;
+    background-color: white;
+    width: 15px; /* تعديل عرض وارتفاع الأيقونة لتتناسب مع الطول الجديد */
+    height: 15px;
+    border-radius: 50%;
+    top: 2px; /* ضبط المسافة من الأعلى لتتناسب مع التغيير */
+    left: 2px; /* ضبط المسافة من اليسار لتتناسب مع التغيير */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.profile-page .toggle-checkbox:checked + .toggle-switch {
+    background-color: var(--blue-color);
+}
+
+.profile-page .toggle-checkbox:checked + .toggle-switch::before {
+    content: "\f00c"; /* شيفرة الصح */
+    left: 60px; /* تعديل موقع الأيقونة عندما يكون الزر في حالة checked */
+    color: var(--blue-color);
+}
+@media (max-width:767px) {
+    .profile-page .info-box .box h4 {
+        text-align: center;
+    }
+    .profile-page .info-box .box > div:not(:last-child) {
+        width: 100%;
+        padding: 0px 0 0;
+        text-align: center;
+    }
+    .profile-page .info-box .box > div:last-child {
+        margin: auto;
+    }
+    .profile-page .toggle-checkbox:checked + .toggle-switch {
+        transform: translateX(-45%);
+    }
+}
+.informartions .skills {
+    flex-basis: 30%;
+}
+.informartions .latest-activities {
+    flex-grow: 1;
+}
+.informartions .skills > div:not(:last-child) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.informartions .skills > div span {
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 5px;
+}
+.informartions .latest-activities img {
+    width: 64px;
+}
+.informartions .latest-activities .box:not(:last-of-type) {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+    .informartions {
+        text-align: center;
+        flex-direction: column;
+    }
+    .informartions .latest-activities .box {
+        flex-direction: column;
+    }
+    .informartions .latest-activities .box .info {
+        flex-direction: column;
+    }
+}
+/* End Profile */
+/* Start Projects */
+.projects-page .projects-widjets {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+.projects-page .projects-widjets .box .date {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.projects-page .projects-widjets .box .avatar {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-top: 30px;
+}
+.projects-page .projects-widjets .box .avatar img {
+    width: 40px;
+    height: 40px;
+}
+.projects-page .projects-widjets .box .level .progress {
+    height: 8px;
+    width: 50%;
+}
+.projects-page .projects-widjets .box .level .percentage {
+    position: absolute;
+    left: 0;
+    height: 100%;
+}
+.projects-page .projects-widjets .box .level span:last-of-type {
+    position: absolute;
+    right: -10px;
+}
+.projects-page .projects-widjets .box .jobs {
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px
+}
+/* End Projects */
+/* Start Animation */
+@keyframes current {
+    0%,
+    100% {
+        background-color: var(--blue-color)
+    }
+    50% {
+        background-color: white;
+    }
+}
+/* End Animation */
