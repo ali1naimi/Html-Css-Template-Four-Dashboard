@@ -987,7 +987,160 @@ table {
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px
 }
+@media (max-width: 767px) {
+    .projects-page .projects-widjets {
+        grid-template-columns: minmax(250px, 1fr);
+    }
+    .projects-page .projects-widjets .box .jobs {
+        text-align: center;
+    }
+    .projects-page .projects-widjets .box .jobs span {
+        margin-bottom: 10px;
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 /* End Projects */
+/* Start Courses */
+.courses-page .course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.courses-page .course-container .box {
+    overflow: hidden;
+}
+.courses-page .course-container .box .imgs img:first-child {
+    width: 100%;
+}
+.courses-page .course-container .box .imgs img:last-child {
+    position: absolute;
+    width: 64px;
+    border: 2px solid white;
+    border-radius: 50%;
+    left: 15px;
+    top: 15px;
+}
+.courses-page .course-container .box .txt p {
+    line-height: 1.6;
+}
+.courses-page .course-container .box .course-info {
+    width: fit-content;
+    margin: 0 auto 20px;
+}
+.courses-page .course-container .box .course-footer {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+@media (max-width: 767px) {
+    .courses-page .course-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* End Courses */
+/* Start Friends */
+.friends-page .friends-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+.friends-page .friends-container .box .icons .contact i {
+    background-color: #eee;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+}
+.friends-page .friends-container .box .profile-info {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+.friends-page .friends-container .box .profile-info h4 {
+    /* font-size: 13px; */
+    margin-bottom: -10px;
+}
+.friends-page .friends-container .box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.friends-page .friends-container .box .btns {
+    display: flex;
+    gap: 2px;
+}
+.friends-page .friends-container .box .profile-footer {
+    border-top: 1px solid #ddd;
+}
+@media (max-width: 767px) {
+    .friends-page .friends-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* End Friends */
+/* Start Files */
+.file-page .file-container .file-widjets {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    flex-grow: 1;
+}
+.file-page .file-container .file-widjets .box .content img {
+    width: 70px;
+    height: 70px;
+}
+.file-page .file-container .file-widjets .box p {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.file-page .file-container .file-statistics {
+    width: 260px;
+    height: fit-content;
+}
+.file-page .file-container .file-statistics .file-box {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0px 10px 0px 10px;
+}
+.file-page .file-container .file-statistics .file-box .info i {
+    color: var(--blue-color);
+    background-color: rgb(0 117 255 / 20%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.file-page .file-container .file-statistics .btn {
+    width: fit-content;
+    margin: 15px auto -5px auto;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+.file-page .file-container .file-statistics .btn:hover {
+    background-color: var(--blue-alt-color);
+}
+.file-page .file-container .file-statistics .btn:hover i {
+    animation: move-btn 0.8s infinite;
+}
+@media (max-width: 767px) {
+    .file-page .file-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .file-page .file-container .file-statistics {
+        width: 100%;
+        order: -1;
+    }
+}
+/* End Files */
 /* Start Animation */
 @keyframes current {
     0%,
@@ -996,6 +1149,15 @@ table {
     }
     50% {
         background-color: white;
+    }
+}
+@keyframes move-btn {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); 
     }
 }
 /* End Animation */
